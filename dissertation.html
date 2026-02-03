@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doctoral Dissertation | Esteban Ramírez Chueca</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --text:#243746;
+  --muted:#6f7b84;
+  --accent:#4f7396;
+  --bg:#ffffff;
+  --serif:'Playfair Display', Georgia, serif;
+  --sans:'Inter', system-ui, sans-serif;
+  --max:900px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.65;
+}
+
+/* NAV */
+.topnav{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid #e3e9ef;
+}
+.topnav-inner{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:12px 20px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
+.topnav a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600;
+  font-size:0.95rem;
+}
+.topnav a:hover{text-decoration:underline}
+
+/* HERO */
+.hero{
+  max-width:var(--max);
+  margin:40px auto 0 auto;
+  padding:0 20px;
+}
+.hero img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 8px 22px rgba(0,0,0,0.12);
+  display:block;
+}
+
+/* WRAP */
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:40px 20px 64px 20px;
+  text-align:center;
+}
+
+/* TITLES */
+h1{
+  font-family:var(--serif);
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+.subtitle{
+  color:var(--muted);
+  font-size:1.05rem;
+  margin-bottom:22px;
+}
+
+/* BAR */
+.bar{
+  height:2px;
+  width:90px;
+  background:linear-gradient(90deg,var(--accent),#b9d1e3);
+  border-radius:2px;
+  margin:26px auto;
+}
+
+/* TEXT */
+.text{
+  max-width:760px;
+  margin:0 auto 26px auto;
+  font-size:1rem;
+  color:#405560;
+}
+
+/* CITATION */
+.citation{
+  background:#f5f8fb;
+  border-left:4px solid var(--accent);
+  padding:16px 20px;
+  text-align:left;
+  font-size:0.95rem;
+  margin:30px auto;
+  max-width:760px;
+}
+.citation a{
+  color:var(--accent);
+  text-decoration:none;
+}
+.citation a:hover{text-decoration:underline}
+
+/* BUTTON */
+.button{
+  display:inline-block;
+  margin-top:14px;
+  padding:10px 20px;
+  border-radius:6px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+}
+.button:hover{
+  background:#3e5f7b;
+}
+
+/* FOOTER */
+.footer{
+  background:var(--accent);
+  color:#eef3f7;
+  padding:28px 20px;
+}
+.footer-inner{
+  max-width:var(--max);
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  font-size:0.85rem;
+}
+
+@media(max-width:700px){
+  h1{font-size:1.8rem;}
+  .footer-inner{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="topnav">
+  <div class="topnav-inner">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="dissertation.html">Dissertation</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="Portada_Esteban.jpg" alt="Doctoral dissertation cover">
+</div>
+
+<div class="wrap">
+
+<h1>Doctoral Dissertation</h1>
+<div class="subtitle">Universidad Autónoma de Madrid · 2023</div>
+<div class="bar"></div>
+
+<div class="text">
+A multidisciplinary doctoral study integrating ecology, physiology, biomineralization, and applied perspectives on halophytic plant systems from extreme saline environments.
+</div>
+
+<div class="citation">
+<strong>Recommended citation (Harvard style):</strong><br><br>
+Ramírez Chueca, E. (2023). <em>Caracterización y uso potencial de las plantas halófilas de las marismas del río Tinto (Huelva, España) dentro del grupo evolutivo de las Salicornioideas</em>. PhD dissertation, Universidad Autónoma de Madrid.<br>
+<a href="https://hdl.handle.net/10486/712738">https://hdl.handle.net/10486/712738</a>
+</div>
+
+<a class="button" href="https://hdl.handle.net/10486/712738" target="_blank">
+Download / View in repository
+</a>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-inner">
+    <div>Postdoctoral Fellow · OEB, Harvard University Herbaria</div>
+    <div>© Esteban Ramírez Chueca — Doctoral Dissertation</div>
+  </div>
+</div>
+
+</body>
+</html>
