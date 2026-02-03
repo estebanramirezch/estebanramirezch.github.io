@@ -270,12 +270,12 @@ de la Fuente, V., Rufo, L., Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-  <div class="footer-inner">
-    <div>Postdoctoral Fellow · OEB, Harvard University Herbaria</div>
-    <div>© Esteban Ramírez Chueca — Publications</div>
-  </div>
-</div>
+<div id="footer-placeholder"></div>
 
-</body>
-</html>
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer-placeholder").innerHTML = data;
+  });
+</script>
