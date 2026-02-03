@@ -197,12 +197,12 @@ Download / View in repository
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-  <div class="footer-inner">
-    <div>Postdoctoral Fellow · OEB, Harvard University Herbaria</div>
-    <div>© Esteban Ramírez Chueca — Doctoral Dissertation</div>
-  </div>
-</div>
+<div id="footer-placeholder"></div>
 
-</body>
-</html>
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer-placeholder").innerHTML = data;
+  });
+</script>
