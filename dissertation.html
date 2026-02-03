@@ -50,19 +50,6 @@ body{
 }
 .topnav a:hover{text-decoration:underline}
 
-/* HERO */
-.hero{
-  max-width:var(--max);
-  margin:40px auto 0 auto;
-  padding:0 20px;
-}
-.hero img{
-  width:100%;
-  border-radius:12px;
-  box-shadow:0 8px 22px rgba(0,0,0,0.12);
-  display:block;
-}
-
 /* WRAP */
 .wrap{
   max-width:var(--max);
@@ -75,12 +62,20 @@ body{
 h1{
   font-family:var(--serif);
   font-size:2.2rem;
-  margin-bottom:10px;
+  margin-bottom:6px;
 }
 .subtitle{
   color:var(--muted);
   font-size:1.05rem;
-  margin-bottom:22px;
+  margin-bottom:14px;
+}
+
+/* TEXT */
+.text{
+  max-width:760px;
+  margin:0 auto 22px auto;
+  font-size:1rem;
+  color:#405560;
 }
 
 /* BAR */
@@ -92,12 +87,17 @@ h1{
   margin:26px auto;
 }
 
-/* TEXT */
-.text{
-  max-width:760px;
-  margin:0 auto 26px auto;
-  font-size:1rem;
-  color:#405560;
+/* HERO */
+.hero{
+  max-width:var(--max);
+  margin:0 auto 36px auto;
+  padding:0 20px;
+}
+.hero img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 8px 22px rgba(0,0,0,0.12);
+  display:block;
 }
 
 /* CITATION */
@@ -168,19 +168,20 @@ h1{
   </div>
 </div>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="Portada_Esteban.jpg" alt="Doctoral dissertation cover">
-</div>
-
 <div class="wrap">
 
 <h1>Doctoral Dissertation</h1>
 <div class="subtitle">Universidad Autónoma de Madrid · 2023</div>
-<div class="bar"></div>
 
 <div class="text">
 A multidisciplinary doctoral study integrating ecology, physiology, biomineralization, and applied perspectives on halophytic plant systems from extreme saline environments.
+</div>
+
+<div class="bar"></div>
+
+<!-- HERO IMAGE -->
+<div class="hero">
+  <img src="Portada_Esteban.jpg" alt="Doctoral dissertation cover">
 </div>
 
 <div class="citation">
