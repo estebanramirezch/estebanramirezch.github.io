@@ -27,11 +27,10 @@ body{
   line-height:1.65;
 }
 
-/* TOP NAV */
+/* NAV */
 .topnav{
   position:sticky;
   top:0;
-  z-index:1000;
   background:#fff;
   border-bottom:1px solid #e3e9ef;
 }
@@ -62,25 +61,34 @@ body{
 h1{
   font-family:var(--serif);
   font-size:2.2rem;
-  margin-bottom:10px;
+  margin-bottom:6px;
 }
 .subtitle{
   color:var(--muted);
   font-size:1.05rem;
-  margin-bottom:36px;
+  margin-bottom:28px;
+}
+
+/* BAR */
+.bar{
+  height:2px;
+  width:90px;
+  background:linear-gradient(90deg,var(--accent),#b9d1e3);
+  border-radius:2px;
+  margin:26px 0 18px 0;
 }
 
 /* YEAR */
 .year{
   font-family:var(--serif);
-  font-size:1.4rem;
-  margin:36px 0 14px 0;
+  font-size:1.35rem;
+  margin:28px 0 10px 0;
 }
 
 /* PUBLICATION */
 .pub{
-  margin-bottom:14px;
-  font-size:0.98rem;
+  margin-bottom:10px;
+  font-size:0.97rem;
 }
 .pub em{
   font-style:italic;
@@ -89,8 +97,10 @@ h1{
   color:var(--accent);
   text-decoration:none;
 }
-.pub a:hover{
-  text-decoration:underline;
+.pub a:hover{text-decoration:underline}
+.note{
+  color:var(--muted);
+  font-size:0.9rem;
 }
 
 /* FOOTER */
@@ -108,13 +118,8 @@ h1{
 }
 
 @media(max-width:700px){
-  h1{
-    font-size:1.8rem;
-  }
-  .footer-inner{
-    flex-direction:column;
-    gap:10px;
-  }
+  h1{font-size:1.8rem;}
+  .footer-inner{flex-direction:column;gap:10px;}
 }
 </style>
 </head>
@@ -137,24 +142,31 @@ h1{
 <div class="wrap">
 
 <h1>Publications</h1>
-<div class="subtitle">Peer-reviewed articles and book chapters</div>
+<div class="subtitle">Peer-reviewed articles, book chapters, and conference proceedings</div>
+<div class="bar"></div>
 
 <!-- 2026 -->
 <div class="year">2026</div>
 
 <div class="pub">
-de la Fuente, V., Rufo, L., Sánchez-Mata, D., &amp; <strong>Ramírez, E.</strong> (2026). Biodiversity and biotechnological applications of plant species and communities adapted to an extreme acidic environment: Río Tinto basin. In R. Amils (Ed.), <em>Geomicrobiology of Río Tinto: a terrestrial Mars analogue</em>. Elsevier. (in press)
+de la Fuente, V., Rufo, L., Sánchez-Mata, D., & <strong>Ramírez, E.</strong> (2026).
+<em>Biodiversity and biotechnological applications of plant species and communities adapted to an extreme acidic environment: Río Tinto basin</em>.
+In R. Amils (Ed.), <em>Geomicrobiology of Río Tinto: a terrestrial Mars analogue</em>. Elsevier. <span class="note">(in press)</span>
 </div>
 
 <div class="pub">
-Rufo, L., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rodríguez, N., &amp; de la Fuente, V. (2026). Elemental concentration and biomineralization of Río Tinto flora. In R. Amils (Ed.), <em>Geomicrobiology of Río Tinto: a terrestrial Mars analogue</em>. Elsevier. (in press)
+Rufo, L., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rodríguez, N., & de la Fuente, V. (2026).
+<em>Elemental concentration and biomineralization of Río Tinto flora</em>.
+In R. Amils (Ed.), <em>Geomicrobiology of Río Tinto: a terrestrial Mars analogue</em>. Elsevier. <span class="note">(in press)</span>
 </div>
 
 <!-- 2025 -->
 <div class="year">2025</div>
 
 <div class="pub">
-<strong>Ramírez, E.</strong>, Rufo, L., &amp; de la Fuente, V. (2025). Dynamics of perennial halophytic communities in the Salicornioideae subfamily: a case study from the Tinto river and western Iberian Peninsula. <em>Mediterranean Botany</em>, 46(1).
+<strong>Ramírez, E.</strong>, Rufo, L., & de la Fuente, V. (2025).
+<em>Dynamics of perennial halophytic communities in the Salicornioideae subfamily</em>.
+<em>Mediterranean Botany</em>, 46(1).
 <a href="https://doi.org/10.5209/mbot.98653">https://doi.org/10.5209/mbot.98653</a>
 </div>
 
@@ -162,7 +174,9 @@ Rufo, L., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rodríguez, N., 
 <div class="year">2024</div>
 
 <div class="pub">
-<strong>Ramírez, E.</strong>, Rodríguez, N., &amp; de la Fuente, V. (2024). Arthrocnemum Moq.: Unlocking opportunities for biosaline agriculture and improved human nutrition. <em>Plants</em>, 13, 496.
+<strong>Ramírez, E.</strong>, Rodríguez, N., & de la Fuente, V. (2024).
+<em><em>Arthrocnemum</em> Moq.: Unlocking opportunities for biosaline agriculture and improved human nutrition</em>.
+<em>Plants</em>, 13, 496.
 <a href="https://doi.org/10.3390/plants13040496">https://doi.org/10.3390/plants13040496</a>
 </div>
 
@@ -170,12 +184,16 @@ Rufo, L., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rodríguez, N., 
 <div class="year">2022</div>
 
 <div class="pub">
-<strong>Ramírez, E.</strong>, Chaâbene, Z., Hernández-Apaolaza, L., Rekik, M., Elleuch, A., &amp; de la Fuente, V. (2022). Seed priming to optimize germination in <em>Arthrocnemum</em> Moq. <em>BMC Plant Biology</em>, 22(1), 527.
+<strong>Ramírez, E.</strong>, Chaâbene, Z., Hernández-Apaolaza, L., Rekik, M., Elleuch, A., & de la Fuente, V. (2022).
+<em>Seed priming to optimize germination in <em>Arthrocnemum</em> Moq.</em>
+<em>BMC Plant Biology</em>, 22, 527.
 <a href="https://doi.org/10.1186/s12870-022-03893-2">https://doi.org/10.1186/s12870-022-03893-2</a>
 </div>
 
 <div class="pub">
-<strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rufo, L., Sánchez-Mata, D., &amp; de la Fuente, V. (2022). Morphology, anatomy and phylogeny of the two sister halophytic genera <em>Microcnemum</em> and <em>Arthrocnemum</em>. <em>Plant Biosystems</em>, 156(6), 1422–1437.
+<strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rufo, L., Sánchez-Mata, D., & de la Fuente, V. (2022).
+<em>Morphology, anatomy and phylogeny of the two sister halophytic genera <em>Microcnemum</em> and <em>Arthrocnemum</em></em>.
+<em>Plant Biosystems</em>, 156(6), 1422–1437.
 <a href="https://doi.org/10.1080/11263504.2022.2056649">https://doi.org/10.1080/11263504.2022.2056649</a>
 </div>
 
@@ -183,36 +201,62 @@ Rufo, L., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., Rodríguez, N., 
 <div class="year">2021</div>
 
 <div class="pub">
-<strong>Ramírez, E.</strong>, Rufo, L., Sánchez-Mata, D., Sánchez-Gavilán, I., &amp; de la Fuente, V. (2021). <em>Arthrocnemum macrostachyum</em> plant communities in the Iberian Peninsula, Balearic and Canary Islands. In F. Pedrotti &amp; E. O. Box (Eds.), <em>Tools for Landscape-Scale Geobotany and Conservation</em> (pp. 231–245). Springer.
-<a href="https://doi.org/10.1007/978-3-030-74950-7_12">https://doi.org/10.1007/978-3-030-74950-7_12</a>
-</div>
-
-<div class="pub">
-Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, &amp; de la Fuente, V. (2021). Bioactive compounds in <em>Salicornia patula</em>. <em>Foods</em>, 10(2), 410.
+Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, & de la Fuente, V. (2021).
+<em>Bioactive compounds in <em>Salicornia patula</em></em>.
+<em>Foods</em>, 10, 410.
 <a href="https://doi.org/10.3390/foods10020410">https://doi.org/10.3390/foods10020410</a>
 </div>
 
 <div class="pub">
-Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, &amp; de la Fuente, V. (2021). Bioactive compounds in <em>Sarcocornia</em> and <em>Arthrocnemum</em>. <em>Plants</em>, 10(10), 2218.
+Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, & de la Fuente, V. (2021).
+<em>Bioactive compounds in <em>Sarcocornia</em> and <em>Arthrocnemum</em></em>.
+<em>Plants</em>, 10, 2218.
 <a href="https://doi.org/10.3390/plants10102218">https://doi.org/10.3390/plants10102218</a>
+</div>
+
+<div class="pub">
+<strong>Ramírez, E.</strong>, Rufo, L., Sánchez-Mata, D., Sánchez-Gavilán, I., & de la Fuente, V. (2021).
+<em><em>Arthrocnemum macrostachyum</em> plant communities in the Iberian Peninsula</em>.
+In F. Pedrotti & E. O. Box (Eds.), <em>Tools for Landscape-Scale Geobotany and Conservation</em> (pp. 231–245). Springer.
+<a href="https://doi.org/10.1007/978-3-030-74950-7_12">https://doi.org/10.1007/978-3-030-74950-7_12</a>
 </div>
 
 <!-- 2020 -->
 <div class="year">2020</div>
 
 <div class="pub">
-<strong>Ramírez, E.</strong> (2020). Sobre la presencia de <em>Vincetoxicum nigrum</em> en los Montes de Valsaín. <em>Flora Montiberica</em>, 77, 108–111.
-<a href="https://doi.org/10.13140/RG.2.2.16698.21445">https://doi.org/10.13140/RG.2.2.16698.21445</a>
-</div>
-
-<div class="pub">
-de la Fuente, V., Rufo, L., Rodríguez, N., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., &amp; Amils, R. (2020). Differential iron management in plants from the Río Tinto basin. <em>Protoplasma</em>, 257(3), 889–900.
+de la Fuente, V., Rufo, L., Rodríguez, N., <strong>Ramírez, E.</strong>, Sánchez-Gavilán, I., & Amils, R. (2020).
+<em>Differential iron management in monocotyledon and dicotyledon plants from the Río Tinto basin</em>.
+<em>Protoplasma</em>, 257(3), 889–900.
 <a href="https://doi.org/10.1007/s00709-019-01476-x">https://doi.org/10.1007/s00709-019-01476-x</a>
 </div>
 
+<!-- 2019 -->
+<div class="year">2019</div>
+
 <div class="pub">
-de la Fuente, V., Rufo, L., Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, Rodríguez, N., &amp; Amils, R. (2018). Plant tissues and embryos biominerals in <em>Sarcocornia pruinosa</em>. <em>Minerals</em>, 8(11), 505.
+<strong>Ramírez, E.</strong>, Rufo, L., Sánchez-Mata, D., & de la Fuente, V. (2019).
+<em><em>Arthrocaulon meridionalis</em> (Chenopodiaceae), a new species of Mediterranean flora</em>.
+<em>Mediterranean Botany</em>, 40(1), 33–41.
+<a href="https://doi.org/10.5209/MBOT.59820">https://doi.org/10.5209/MBOT.59820</a>
+</div>
+
+<!-- 2018 -->
+<div class="year">2018</div>
+
+<div class="pub">
+de la Fuente, V., Rufo, L., Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, Rodríguez, N., & Amils, R. (2018).
+<em>Plant tissues and embryos biominerals in <em>Sarcocornia pruinosa</em></em>.
+<em>Minerals</em>, 8(11), 505.
 <a href="https://doi.org/10.3390/min8110505">https://doi.org/10.3390/min8110505</a>
+</div>
+
+<div class="pub">
+de la Fuente, V., Rufo, L., Sánchez-Gavilán, I., <strong>Ramírez, E.</strong>, Rodríguez, N., & Amils, R. (2018).
+<em>Biomineralization in <em>Sarcocornia pruinosa</em> growing in the tidal area of Río Tinto, an extreme acidic environment</em>.
+<em>1st International Electronic Conference on Mineral Science</em>. MDPI.
+<span class="note">(Conference proceedings)</span>
+<a href="https://doi.org/10.3390/IECMS2018-05477">https://doi.org/10.3390/IECMS2018-05477</a>
 </div>
 
 </div>
